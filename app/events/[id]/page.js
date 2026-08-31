@@ -24,7 +24,8 @@ export default async function page({ params }){
     whatToExpect: data.whatToExpect,
     imageLinkName: data.imageLinkName,
     type: data.type,
-    whatsappLink: data.whatsappLink
+    whatsappLink: data.whatsappLink,
+    gform: data.gform
   }
   return (
     <>

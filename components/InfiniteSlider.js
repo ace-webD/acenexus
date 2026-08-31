@@ -3,15 +3,20 @@ import Image from "next/image"
 import { useEffect, useRef } from 'react'
 
 const images = [
-  "/pic1.JPG",
-  "/pic2.JPG",
-  "/pic3.JPG",
-  "/pic4.JPG",
-  "/pic5.JPG",
-  "/pic6.JPG",
-  "/pic7.JPG",
-  "/pic8.JPG",
-  "/pic9.JPG"
+  "/pic1.jpeg",
+  "/pic2.jpeg",
+  "/pic3.jpeg",
+  "/pic4.jpeg",
+  "/pic5.jpeg",
+  "/pic6.jpeg",
+  "/pic7.jpeg",
+  "/pic8.jpeg",
+  "/pic9.jpeg",
+  "/pic10.jpeg",
+  "/pic11.jpeg",
+  "/pic12.jpeg",
+  "/pic13.jpeg",
+  
 ]
 
 export default function InfiniteSlider() {

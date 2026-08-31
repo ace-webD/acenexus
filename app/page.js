@@ -23,12 +23,11 @@ export default async function Home() {
     }
   })
   const imageLinkNames = [
-    'iot.png',
-    'appdev.png',
-    'aiml.png',
-    'cyber.png',
-    'cp.jpeg',
-    'webdev.png'
+    'iot1.jpeg',
+    'appdev.jpeg',
+    'aiml_1.png',
+    'network.jpeg',
+    'webd.png'
   ]
   return (
     <div className="min-h-screen text-white bg-[#1c160c] h-full" suppressHydrationWarning>

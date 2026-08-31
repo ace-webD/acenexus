@@ -7,11 +7,11 @@ export const Navbar = () => {
   return (
     <>
       {/* Mobile Navbar */}
-      <div className="bg-[#1A1205] md:hidden flex flex-col w-full border-b border-[#4A3200]">
+      <div className="bg-[#1A1205] md:hidden flex flex-col w-full border-b border-[#4A3200] sticky top-0 z-50 backdrop-blur-md">
         <div className="flex flex-row py-5 px-6 justify-center items-center w-full">
           <a href="/">
             <Image
-              src="/nexus.png"
+              src="/nexus_new.png"
               alt="Nexus Logo"
               width={200}
               height={200}
@@ -64,7 +64,7 @@ export const Navbar = () => {
         <div>
           <a href="/">
             <Image
-              src="/nexus1.png"
+              src="/nexus_new.png"
               alt="Nexus Logo"
               width={240}
               height={240}

@@ -4,51 +4,43 @@ import { Calendar, MapPin, ArrowUpRight } from 'lucide-react'
 const events = [
   {
     id: 1,
-    title: 'INDOVATION: Scavenger Hunt',
-    dateText: 'January 25, 9:00 AM – 4:00 PM',
-    location: 'LTC 104',
-    start: '20260125T033000Z',
-    end: '20260125T103000Z'
+    title: 'Murder Mystery',
+    dateText: 'September 5, 9:00 AM – 5:00 PM',
+    location: 'Lab',
+    start: '20260905T033000Z', // 9:00 AM IST
+    end: '20260905T113000Z'    // 5:00 PM IST
   },
   {
     id: 2,
-    title: 'GreenCode (App Development)',
-    dateText: 'January 25, 9:00 AM – 5:00 PM',
-    location: 'SoC Lab 4',
-    start: '20260125T033000Z',
-    end: '20260125T113000Z'
+    title: 'AI Arena',
+    dateText: 'September 5, 9:00 AM – 5:00 PM',
+    location: 'Lab',
+    start: '20260905T033000Z',
+    end: '20260905T113000Z'
   },
   {
     id: 3,
-    title: 'NLP Unlocked: From Text To Transformers (AI/ML)',
-    dateText: 'January 25, 9:00 AM – 5:00 PM',
-    location: 'LTC 201',
-    start: '20260125T033000Z',
-    end: '20260125T113000Z'
+    title: 'App Wars',
+    dateText: 'September 5, 9:00 AM – 5:00 PM',
+    location: 'Lab',
+    start: '20260905T033000Z',
+    end: '20260905T113000Z'
   },
   {
     id: 4,
-    title: 'Prompt2Protect (Cyber Security)',
-    dateText: 'January 25, 9:30 AM – 4:30 PM',
-    location: 'LTC 104',
-    start: '20260125T040000Z',
-    end: '20260125T110000Z'
+    title: 'Survival',
+    dateText: 'September 5, 9:00 AM – 5:00 PM',
+    location: 'Lab',
+    start: '20260905T033000Z',
+    end: '20260905T113000Z'
   },
   {
     id: 5,
-    title: 'CRUDXpress (Competitive Programming)',
-    dateText: 'January 25, 9:30 AM – 4:00 PM',
-    location: 'SoC Lab 1',
-    start: '20260125T040000Z',
-    end: '20260125T103000Z'
-  },
-  {
-    id: 6,
-    title: 'WebDev Workshop',
-    dateText: 'January 25, 10:00 AM – 4:30 PM',
-    location: 'SoC Lab 2',
-    start: '20260125T043000Z',
-    end: '20260125T110000Z'
+    title: 'Ship It',
+    dateText: 'September 5, 9:00 AM – 5:00 PM',
+    location: 'Lab',
+    start: '20260905T033000Z',
+    end: '20260905T113000Z'
   }
 ]
 
