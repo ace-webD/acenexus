@@ -1,48 +1,107 @@
 'use client'
+
 import Image from "next/image"
 import { Link } from "react-scroll"
 
 export const Navbar = () => {
   return (
     <>
-     <div className="bg-[#0b0f1a] md:hidden flex flex-col w-full border-b-[1px] border-gray-700">
-  <div className="flex flex-row py-5 px-6 justify-center items-center w-full">
-    <div className="text-xl font-bold text-yellow-400 font-mono tracking-tighter">
-      <a href="/"><Image src={"/nexus.png"} alt="photo" width={200} height={200}/></a>
-    </div>
-  </div>
+      {/* Mobile Navbar */}
+      <div className="bg-[#1A1205] md:hidden flex flex-col w-full border-b border-[#4A3200]">
+        <div className="flex flex-row py-5 px-6 justify-center items-center w-full">
+          <a href="/">
+            <Image
+              src="/nexus.png"
+              alt="Nexus Logo"
+              width={200}
+              height={200}
+            />
+          </a>
+        </div>
 
-  <div className="flex flex-row justify-around pb-4 px-2 overflow-x-auto no-scrollbar">
-    <div className="flex flex-col items-center gap-y-1 min-w-[70px]">
-      <div className="text-xs font-semibold text-white uppercase cursor-pointer"><Link to="events-sm" smooth={true} duration={500}>Events</Link></div>
-      <div className="h-[2px] w-4 bg-yellow-400 mt-1"></div>
-    </div>
-    
-    <div className="flex flex-col items-center gap-y-1 min-w-[70px]">
-      <div className="text-xs font-semibold text-gray-400 uppercase"><Link to="timeline-sm" smooth={true} duration={500}>Timeline</Link></div>
-    </div>
+        <div className="flex flex-row justify-around pb-4 px-2 overflow-x-auto no-scrollbar">
+          {/* About */}
+          <div className="flex flex-col items-center gap-y-1 min-w-[70px]">
+            <div className="text-xs font-semibold text-[#D6C4A5] uppercase cursor-pointer hover:text-[#FFC629] transition-colors">
+              <Link to="about-sm" smooth={true} duration={500}>
+                About
+              </Link>
+            </div>
+          </div>
 
-    <div className="flex flex-col items-center gap-y-1 min-w-[70px]">
-      <div className="text-xs font-semibold text-gray-400 uppercase"><Link to="gallery-sm" smooth={true} duration={500}>Gallery</Link></div>
-    </div>
+          {/* Events */}
+          <div className="flex flex-col items-center gap-y-1 min-w-[70px]">
+            <div className="text-xs font-semibold text-[#FFC629] uppercase cursor-pointer">
+              <Link to="events-sm" smooth={true} duration={500}>
+                Events
+              </Link>
+            </div>
+            <div className="h-[2px] w-4 bg-[#FFC629] mt-1"></div>
+          </div>
 
-    <div className="flex flex-col items-center gap-y-1 min-w-[70px]">
-      <div className="text-xs font-semibold text-gray-400 uppercase"><Link to="about-sm" smooth={true} duration={500}>About</Link></div>
-    </div>
-  </div>
-    </div>
+          {/* Timeline */}
+          <div className="flex flex-col items-center gap-y-1 min-w-[70px]">
+            <div className="text-xs font-semibold text-[#D6C4A5] uppercase cursor-pointer hover:text-[#FFC629] transition-colors">
+              <Link to="timeline-sm" smooth={true} duration={500}>
+                Timeline
+              </Link>
+            </div>
+          </div>
 
-    <div className="hidden md:flex flex-row py-8 px-12 justify-between items-center w-full border-b-[1px] border-gray-700 bg-[#0b0f1a]">
-  <div className="text-3xl font-bold text-yellow-400 font-mono tracking-tighter">
-      <a href="/"><Image src={"/nexus.png"} alt="photo" width={240} height={240}/></a></div>
-  
-  <div className="flex flex-row gap-x-10 text-gray-300 font-mono text-sm uppercase tracking-widest">
-    <div className="cursor-pointer hover:text-yellow-400 transition-colors"><Link to="events-md" smooth={true} duration={500}>Events</Link></div>
-    <div className="cursor-pointer hover:text-yellow-400 transition-colors"><Link to="gallery-md" smooth={true} duration={500}>Gallery</Link></div>
-    <div className="cursor-pointer hover:text-yellow-400 transition-colors"><Link to="about-md" smooth={true} duration={500}>About</Link></div>
-    <div className="cursor-pointer hover:text-yellow-400 transition-colors"><Link to="timeline-md" smooth={true} duration={500}>Timeline</Link></div>
-  </div>
-    </div>
+          {/* Gallery */}
+          <div className="flex flex-col items-center gap-y-1 min-w-[70px]">
+            <div className="text-xs font-semibold text-[#D6C4A5] uppercase cursor-pointer hover:text-[#FFC629] transition-colors">
+              <Link to="gallery-sm" smooth={true} duration={500}>
+                Gallery
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop Navbar */}
+      <div className="hidden md:flex flex-row py-8 px-12 justify-between items-center w-full border-b border-[#4A3200] bg-[#1A1205] sticky top-0 z-50 backdrop-blur-md">
+        <div>
+          <a href="/">
+            <Image
+              src="/nexus1.png"
+              alt="Nexus Logo"
+              width={240}
+              height={240}
+            />
+          </a>
+        </div>
+
+        <div className="flex flex-row gap-x-10 font-mono text-sm uppercase tracking-widest">
+          {/* About */}
+          <div className="cursor-pointer text-[#D6C4A5] hover:text-[#FFC629] transition-colors duration-300">
+            <Link to="about-md" smooth={true} duration={500}>
+              About
+            </Link>
+          </div>
+
+          {/* Events */}
+          <div className="cursor-pointer text-[#D6C4A5] hover:text-[#FFC629] transition-colors duration-300">
+            <Link to="events-md" smooth={true} duration={500}>
+              Events
+            </Link>
+          </div>
+
+          {/* Timeline */}
+          <div className="cursor-pointer text-[#D6C4A5] hover:text-[#FFC629] transition-colors duration-300">
+            <Link to="timeline-md" smooth={true} duration={500}>
+              Timeline
+            </Link>
+          </div>
+
+          {/* Gallery */}
+          <div className="cursor-pointer text-[#D6C4A5] hover:text-[#FFC629] transition-colors duration-300">
+            <Link to="gallery-md" smooth={true} duration={500}>
+              Gallery
+            </Link>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

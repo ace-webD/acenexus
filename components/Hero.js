@@ -17,11 +17,11 @@ export const Hero = () => {
 
         <div className="flex flex-col w-2/3 mx-auto items-center mt-3 border-b-[1px] border-gray-700 py-5 fade-up delay-1">
           <div className="font-medium">ACE PRESENTS</div>
-          <div className="font-bold text-yellow-300 text-5xl glow-text">NEXUS'25</div>
+          <div className="font-bold text-yellow-300 text-5xl glow-text">NEXUS'26</div>
         </div>
 
         <div className="text-gray-300 text-xl mt-2 text-center fade-up delay-2">
-          <code>JANUARY 25, 2026</code>
+          <code>SEPTEMBER 5, 2026</code>
         </div>
 
         <div className="text-yellow-400 border-1 border-yellow-400 text-center rounded-2xl w-2/3 mx-auto mt-10 py-1 fade-up delay-3 glow-pill hover-lift">
@@ -46,12 +46,12 @@ export const Hero = () => {
         <div className="flex flex-col w-3/4 max-w-5xl items-center border-b-[1px] border-gray-700 pb-10 fade-up delay-1">
           <div className="font-medium text-2xl tracking-[0.2em]">ACE PRESENTS</div>
           <div className="font-bold text-yellow-300 text-9xl mt-2 tracking-tighter glow-text">
-            NEXUS'25
+            NEXUS'26
           </div>
         </div>
 
         <div className="text-gray-300 text-3xl mt-6 text-center tracking-widest fade-up delay-2">
-          <code>JANUARY 25, 2026</code>
+          <code>SEPTEMBER 5, 2026</code>
         </div>
 
         <div className="text-yellow-400 border-1 border-yellow-400 text-center rounded-2xl w-fit px-12 mt-12 py-3 text-2xl font-mono uppercase tracking-wider fade-up delay-3 glow-pill hover-lift">

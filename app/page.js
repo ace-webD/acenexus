@@ -31,7 +31,7 @@ export default async function Home() {
     'webdev.png'
   ]
   return (
-    <div className="min-h-screen text-white bg-[#0b0f1a] h-full" suppressHydrationWarning>
+    <div className="min-h-screen text-white bg-[#1c160c] h-full" suppressHydrationWarning>
       <Navbar />
       <Hero />
       <About />
