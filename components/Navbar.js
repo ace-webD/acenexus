@@ -21,41 +21,52 @@ export const Navbar = () => {
 
         <div className="flex flex-row justify-around pb-4 px-2 overflow-x-auto no-scrollbar">
           {/* About */}
-          <div className="flex flex-col items-center gap-y-1 min-w-[70px]">
-            <div className="text-xs font-semibold text-[#D6C4A5] uppercase cursor-pointer hover:text-[#FFC629] transition-colors">
-              <Link to="about-sm" smooth={true} duration={500}>
-                About
-              </Link>
-            </div>
-          </div>
+          <Link
+            to="about-sm"
+            smooth={true}
+            duration={500}
+            spy={true}
+            activeClass="active"
+            className="text-xs font-semibold text-[#D6C4A5] uppercase cursor-pointer hover:text-[#FFC629] transition-colors"
+          >
+            About
+          </Link>
 
           {/* Events */}
-          <div className="flex flex-col items-center gap-y-1 min-w-[70px]">
-            <div className="text-xs font-semibold text-[#FFC629] uppercase cursor-pointer">
-              <Link to="events-sm" smooth={true} duration={500}>
-                Events
-              </Link>
-            </div>
-            <div className="h-[2px] w-4 bg-[#FFC629] mt-1"></div>
-          </div>
+          <Link
+            to="events-sm"
+            smooth={true}
+            duration={500}
+            spy={true}
+            activeClass="active"
+            className="text-xs font-semibold text-[#D6C4A5] uppercase cursor-pointer hover:text-[#FFC629] transition-colors"
+          >
+            Events
+          </Link>
 
           {/* Timeline */}
-          <div className="flex flex-col items-center gap-y-1 min-w-[70px]">
-            <div className="text-xs font-semibold text-[#D6C4A5] uppercase cursor-pointer hover:text-[#FFC629] transition-colors">
-              <Link to="timeline-sm" smooth={true} duration={500}>
-                Timeline
-              </Link>
-            </div>
-          </div>
+          <Link
+            to="timeline-sm"
+            smooth={true}
+            duration={500}
+            spy={true}
+            activeClass="active"
+            className="text-xs font-semibold text-[#D6C4A5] uppercase cursor-pointer hover:text-[#FFC629] transition-colors"
+          >
+            Timeline
+          </Link>
 
           {/* Gallery */}
-          <div className="flex flex-col items-center gap-y-1 min-w-[70px]">
-            <div className="text-xs font-semibold text-[#D6C4A5] uppercase cursor-pointer hover:text-[#FFC629] transition-colors">
-              <Link to="gallery-sm" smooth={true} duration={500}>
-                Gallery
-              </Link>
-            </div>
-          </div>
+          <Link
+            to="gallery-sm"
+            smooth={true}
+            duration={500}
+            spy={true}
+            activeClass="active"
+            className="text-xs font-semibold text-[#D6C4A5] uppercase cursor-pointer hover:text-[#FFC629] transition-colors"
+          >
+            Gallery
+          </Link>
         </div>
       </div>
 
@@ -73,35 +84,70 @@ export const Navbar = () => {
         </div>
 
         <div className="flex flex-row gap-x-10 font-mono text-sm uppercase tracking-widest">
-          {/* About */}
-          <div className="cursor-pointer text-[#D6C4A5] hover:text-[#FFC629] transition-colors duration-300">
-            <Link to="about-md" smooth={true} duration={500}>
-              About
-            </Link>
-          </div>
+          <Link
+            to="about-md"
+            smooth={true}
+            duration={500}
+            spy={true}
+            activeClass="active"
+            className="cursor-pointer text-[#D6C4A5] hover:text-[#FFC629] transition-colors duration-300"
+          >
+            About
+          </Link>
 
-          {/* Events */}
-          <div className="cursor-pointer text-[#D6C4A5] hover:text-[#FFC629] transition-colors duration-300">
-            <Link to="events-md" smooth={true} duration={500}>
-              Events
-            </Link>
-          </div>
+          <Link
+            to="events-md"
+            smooth={true}
+            duration={500}
+            spy={true}
+            activeClass="active"
+            className="cursor-pointer text-[#D6C4A5] hover:text-[#FFC629] transition-colors duration-300"
+          >
+            Events
+          </Link>
 
-          {/* Timeline */}
-          <div className="cursor-pointer text-[#D6C4A5] hover:text-[#FFC629] transition-colors duration-300">
-            <Link to="timeline-md" smooth={true} duration={500}>
-              Timeline
-            </Link>
-          </div>
+          <Link
+            to="timeline-md"
+            smooth={true}
+            duration={500}
+            spy={true}
+            activeClass="active"
+            className="cursor-pointer text-[#D6C4A5] hover:text-[#FFC629] transition-colors duration-300"
+          >
+            Timeline
+          </Link>
 
-          {/* Gallery */}
-          <div className="cursor-pointer text-[#D6C4A5] hover:text-[#FFC629] transition-colors duration-300">
-            <Link to="gallery-md" smooth={true} duration={500}>
-              Gallery
-            </Link>
-          </div>
+          <Link
+            to="gallery-md"
+            smooth={true}
+            duration={500}
+            spy={true}
+            activeClass="active"
+            className="cursor-pointer text-[#D6C4A5] hover:text-[#FFC629] transition-colors duration-300"
+          >
+            Gallery
+          </Link>
         </div>
       </div>
+
+      <style jsx global>{`
+        .active {
+          color: #ffc629 !important;
+          position: relative;
+        }
+
+        .active::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -6px;
+          width: 18px;
+          height: 2px;
+          background: #ffc629;
+          border-radius: 999px;
+        }
+      `}</style>
     </>
   )
 }

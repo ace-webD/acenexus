@@ -24,7 +24,7 @@ export default async function Home() {
   })
   const imageLinkNames = [
     'iot1.jpeg',
-    'appdev.jpeg',
+    'app4.jpeg',
     'aiml_1.png',
     'network.jpeg',
     'webd.png'

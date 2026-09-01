@@ -3,42 +3,43 @@ import { Calendar, MapPin, ArrowUpRight } from 'lucide-react'
 
 const events = [
   {
-    id: 1,
-    title: 'Murder Mystery',
-    dateText: 'September 5, 9:00 AM – 5:00 PM',
-    location: 'Lab',
-    start: '20260905T033000Z', // 9:00 AM IST
-    end: '20260905T113000Z'    // 5:00 PM IST
-  },
+  id: 1,
+  title: 'Murder Mystery',
+  dateText: 'September 5, 10:00 AM – 4:00 PM',
+  location: 'TBD',
+  start: '20260905T043000Z',
+  end: '20260905T103000Z'
+},
   {
-    id: 2,
-    title: 'AI Arena',
-    dateText: 'September 5, 9:00 AM – 5:00 PM',
-    location: 'Lab',
-    start: '20260905T033000Z',
-    end: '20260905T113000Z'
-  },
+  id: 2,
+  title: 'AI Arena',
+  dateText: 'September 5, 9:00 AM – 4:30 PM',
+  location: 'TBD',
+  start: '20260905T033000Z',
+  end: '20260905T100000Z'
+},
   {
-    id: 3,
-    title: 'App Wars',
-    dateText: 'September 5, 9:00 AM – 5:00 PM',
-    location: 'Lab',
-    start: '20260905T033000Z',
-    end: '20260905T113000Z'
-  },
-  {
-    id: 4,
-    title: 'Survival',
-    dateText: 'September 5, 9:00 AM – 5:00 PM',
-    location: 'Lab',
-    start: '20260905T033000Z',
-    end: '20260905T113000Z'
-  },
+  id: 3,
+  title: 'App Wars',
+  dateText: 'September 5, 9:00 AM – 5:00 PM',
+  location: 'TBD',
+  start: '20260905T033000Z',
+  end: '20260905T113000Z'
+},
+
+{
+  id: 4,
+  title: 'Servival',
+  dateText: 'September 5, 9:00 AM – 4:00 PM',
+  location: 'TBD',
+  start: '20260905T033000Z',
+  end: '20260905T103000Z'
+},
   {
     id: 5,
-    title: 'Ship It',
+    title: 'SHIP IT',
     dateText: 'September 5, 9:00 AM – 5:00 PM',
-    location: 'Lab',
+    location: 'TBD',
     start: '20260905T033000Z',
     end: '20260905T113000Z'
   }
