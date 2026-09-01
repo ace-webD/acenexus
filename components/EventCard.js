@@ -54,12 +54,14 @@ export const EventCard = ({ event, imageLink }) => {
           {event.description}
         </div>
 
-        <Link
-          href="/"
-          className="block bg-[#2B1A00] hover:bg-[#3D2500] text-white rounded-xl w-full mt-4 font-semibold py-3 text-center cursor-pointer fade-up delay-4 transition-colors"
-        >
-          Click to apply
-        </Link>
+        <a
+            href={event.gform}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#2B1A00] hover:bg-[#3D2500] text-white rounded-xl w-fit px-10 mt-6 font-semibold py-3 text-center cursor-pointer fade-up delay-4 transition-colors"
+          >
+            Click to apply
+          </a>
       </div>
 
       {/* Desktop Card */}
