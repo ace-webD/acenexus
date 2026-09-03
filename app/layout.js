@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "ACE NEXUS'25",
+  title: "ACE NEXUS'26",
     icons: {
     icon: "nexus.png",
   },
